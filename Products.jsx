@@ -6,6 +6,7 @@ const products = [
     name: 'Gold Necklace & Hand Band',
     price: '$2,000',
     weight: '50g',
+    image: '/assets/luxury-gold-set.jpg',
     description: 'Exquisite collection of premium gold necklaces and hand bands, crafted with precision and elegance.',
   },
   {
@@ -13,14 +14,16 @@ const products = [
     name: 'Premium Gold Bangles & Bracelets',
     price: '$3,000',
     weight: '75g',
+    image: '/assets/luxury-gold-set.jpg',
     description: 'Stunning array of gold bangles and bracelets featuring intricate designs and exceptional craftsmanship.',
   },
   {
     id: 3,
-    name: 'Luxury Diamond Rolex Watch Collection',
-    price: '$6,000',
-    weight: 'Premium Timepiece',
-    description: 'Exquisite diamond-studded Rolex watches featuring premium craftsmanship, precision engineering, and timeless luxury design.',
+    name: 'Luxury Rolex Gold Set',
+    price: '$500',
+    weight: 'Premium Collection',
+    image: '/assets/luxury-gold-set.jpg',
+    description: 'Exclusive luxury set featuring a premium Rolex timepiece accompanied by heavy-link gold chains and matching bracelet.',
   },
 ]
 
@@ -36,8 +39,12 @@ export default function Products() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product) => (
             <div key={product.id} className="bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <div className="w-full h-64 bg-gradient-to-br from-gold-light to-gold-dark flex items-center justify-center">
-                <p className="text-white text-lg font-bold">Product Image</p>
+              <div className="w-full h-64 overflow-hidden">
+                <img 
+                  src={product.image} 
+                  alt={product.name}
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-luxury mb-2">{product.name}</h3>
