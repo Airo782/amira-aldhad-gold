@@ -1,0 +1,26 @@
+{
+  "name": "amira-aldhad-gold",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AMIRA ALDHAD - Luxury Gold & Investment Website",
+  "author": "AMIRA ALDHAD",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "lucide-react": "^0.453.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "vite": "^8.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  }
+}

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 3rem; letter-spacing: -1px; }
+h2 { font-size: 2.25rem; letter-spacing: -0.5px; }
+h3 { font-size: 1.5rem; }
+
+p { margin-bottom: 1rem; line-height: 1.8; }
+
+.btn {
+  @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 cursor-pointer;
+}
+
+.btn-primary {
+  @apply bg-gold text-luxury hover:bg-gold-dark shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply border-2 border-gold text-gold hover:bg-gold hover:text-luxury;
+}
+
+a {
+  color: #D4AF37;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #AA8C2C;
+}
+
+section {
+  @apply py-16 md:py-24;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in { animation: fadeIn 0.5s ease-in; }
+.animate-slide-up { animation: slideUp 0.5s ease-out; }
+
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  section { @apply py-12; }
+}
