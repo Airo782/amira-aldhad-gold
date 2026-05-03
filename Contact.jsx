@@ -12,21 +12,15 @@ export default function Contact() {
     const { name, value } = e.target
     setFormData(prev => ({
       ...prev,
-      [name]: value,
+      [name],
     }))
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log('Form submitted:', formData)
-    setFormData({ name: '', email: '', message: '' })
   }
 
   const contactChannels = [
     {
       name: 'Zangi',
       label: 'Message on Zangi',
-      url: 'https://zangi.com',
+      url: 'https://services.zangi.com/dl/conversation/8719484678',
       icon: MessageCircle,
     },
     {
@@ -74,7 +68,7 @@ export default function Contact() {
 
           <div>
             <h3 className="text-2xl font-bold text-luxury mb-8">Send us a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form action="https://formspree.io/f/maqvqaww" method="POST" className="space-y-4">
               <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} className="w-full px-4 py-3 border border-gold-light rounded-lg focus:outline-none focus:border-gold" required />
               <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} className="w-full px-4 py-3 border border-gold-light rounded-lg focus:outline-none focus:border-gold" required />
               <textarea name="message" placeholder="Your Message" value={formData.message} onChange={handleChange} rows="5" className="w-full px-4 py-3 border border-gold-light rounded-lg focus:outline-none focus:border-gold resize-none" required></textarea>

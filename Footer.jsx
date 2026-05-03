@@ -44,6 +44,10 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Connect With Us</h4>
             <div className="space-y-3">
+              <a href="https://services.zangi.com/dl/conversation/8719484678" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-400 hover:text-gold transition-colors">
+                <MessageCircle size={18} />
+                <span className="text-sm">Zangi</span>
+              </a>
               <a href="https://t.me/Amiraaldha" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-400 hover:text-gold transition-colors">
                 <Send size={18} />
                 <span className="text-sm">Telegram</span>
