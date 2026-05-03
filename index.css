@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --color-gold: #D4AF37;
+  --color-gold-dark: #B8860B;
+  --color-gold-light: #F4E0A1;
+  --color-luxury: #1A1A1A;
+  --color-luxury-light: #333333;
+  --color-cream: #FFFDF5;
+  --color-cream-dark: #F5F1E0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +25,11 @@ body {
   background-color: #ffffff;
   color: #1a1a1a;
   line-height: 1.6;
+}
+
+/* RTL specific font */
+[dir="rtl"] body {
+  font-family: "Noto Sans Arabic", system-ui, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
