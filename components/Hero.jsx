@@ -19,10 +19,22 @@ export default function Hero() {
             <button className="btn btn-primary">{t.hero.view_collection}</button>
             <button className="btn btn-secondary">{t.hero.get_in_touch}</button>
           </div>
+          
+          {/* Owner Information */}
+          <div className="mt-12 pt-8 border-t border-gold-light">
+            <p className="text-gold font-semibold mb-3 uppercase tracking-wider text-sm">{t.hero.owner_title}</p>
+            <h3 className="text-2xl font-bold text-luxury mb-2">{t.hero.owner_name}</h3>
+            <p className="text-gray-700">{t.hero.owner_description}</p>
+          </div>
         </div>
+        
         <div className="animate-fade-in">
-          <div className="w-full h-96 bg-gradient-to-br from-gold-light to-gold rounded-lg shadow-2xl flex items-center justify-center">
-            <p className="text-luxury text-2xl font-bold">{t.hero.collection_title}</p>
+          <div className="w-full flex items-center justify-center">
+            <img 
+              src="/assets/johnson-akinjimi.jpg" 
+              alt={t.hero.owner_name}
+              className="w-full max-w-md rounded-lg shadow-2xl hover:shadow-3xl transition-shadow duration-300 object-cover"
+            />
           </div>
         </div>
       </div>

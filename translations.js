@@ -18,6 +18,9 @@ export const translations = {
       view_collection: 'View Collection',
       get_in_touch: 'Get in Touch',
       collection_title: 'Premium Gold Collection',
+      owner_title: 'Ministry Owner',
+      owner_name: 'Johnson Sunday Akinjimi',
+      owner_description: 'Founder & Director of AMIRA ALDHAD Ministry',
     },
     products: {
       title: 'Premium Gold Jewelry',
@@ -116,6 +119,9 @@ export const translations = {
       view_collection: 'عرض المجموعة',
       get_in_touch: 'تواصل معنا',
       collection_title: 'مجموعة الذهب الفاخرة',
+      owner_title: 'مالك الوزارة',
+      owner_name: 'جونسون صنداي أكينجيمي',
+      owner_description: 'مؤسس ومدير وزارة أميرة الذهب',
     },
     products: {
       title: 'مجوهرات ذهب فاخرة',
